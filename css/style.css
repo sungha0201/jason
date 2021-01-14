@@ -1,8 +1,4 @@
 @charset "UTF-8";
-
-
-
-
 /* 섹션 2,3,4,5 공용 스타일 */
 #wrap #main .section2345 {z-index:2;position:relative;width:100%;height:auto;background:#fff;padding:6.831319% 0;}
 #wrap #main .section2345 .wrap {width:100%;max-width:1570px;margin:0 auto;}
@@ -12,8 +8,6 @@
 #wrap #main .section2345 .wrap .gap .container .title h2 {font-size:33px;text-align:center;color:#000;font-weight:500;}
 #wrap #main .section2345 .wrap .gap .container .title h2:after {content:'';display:block;width:100px;border-bottom:1px solid #ccc;height:25px;margin:0 auto;}
 #wrap #main .section2345 .wrap .gap .container .title h3 {text-align:center;font-size:14px;color:#777;padding-top:20px;}
-
-
 
 #wrap {width:100%;}
 #wrap #header {z-index:3;position:fixed;top:0;left:0;width:100%;height:124px;background:rgba(255,255,255, 0);transition:background-color .6s;box-shadow:0 4px 8px rgba(0,0,0, .0)/* 수평 수직 블러 색상*/}
@@ -103,7 +97,6 @@
 #wrap #main #section1 .wrap .gap .container .slide-container .smooth-btn-wrap {z-index:2;position:absolute;bottom:3%;left:0;width:100%;height:48px;text-align:center;}
 #wrap #main #section1 .wrap .gap .container .slide-container .smooth-btn-wrap a {display:inline-block;width:auto;height:100%;background:url(../img/arr_down_thin.png) no-repeat 50% 70%;background-size:35px 18px;color:#eee;font-weight:600;font-size:13px;transition:all 0.3s;}
 #wrap #main #section1 .wrap .gap .container .slide-container .smooth-btn-wrap a:hover {background-position:50% 100%;color:#fff;}
-
 
 
 #wrap #main #section2 {margin-top:969px;}

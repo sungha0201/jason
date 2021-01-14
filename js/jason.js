@@ -33,7 +33,6 @@
                     }
                 });
 
-
                 $window.scroll(function(){
                     that = $(this);
                     if( that.scrollTop() >= 30 ){
@@ -141,8 +140,6 @@
                 resizeFn();
             });
 
-
-
             //페이지버튼
             $pageBtn.each(function(idx){
                 $(this).on({
@@ -156,8 +153,7 @@
                 });
             });
 
-            
-
+    
             $nextBtn.on({
                 click:  function(e){
                     e.preventDefault();
@@ -181,7 +177,6 @@
             });
 
             
-
             //터치 스와이프 이벤트
             $slideContainer.swipe({
                 swipeLeft:function(e){ //다음슬라이드
@@ -203,7 +198,6 @@
             });
 
             ///////////////slide///////////////////////////////////////////////////////////////////////////////////////
-
             //smooth-btn
             $smoothBtn.on({
                 click:function(e){
@@ -213,7 +207,6 @@
                         $('html,body').stop().animate({ scrollTop:$(url).offset().top-headerH },600,'easeOutExpo');
                 }              
             });
-
 
         },
         section2Fn:function(){
@@ -309,8 +302,6 @@
                  mainPrevSlideFn();
                }
 
-
-
                /////3///////////////////////////////////////
                //3-1  다음 화살 버튼 클릭 이벤트 함수
                $nextBtn.on({
@@ -328,16 +319,7 @@
                    }
                });
 
-               ////////4.페이지버튼(인디게이터) 이벤트 함수/////////////////
-               //스토리 보드 :현재 슬라이드가 
-               //첫번째 슬라이드 이면 페이지 버튼 1 : [1]두번째 슬라이드 이미지
-               //첫번째 슬라이드 이면 페이지 버튼 2 : [2]세번쨰 슬라이드 이미지    
-
-               //두번째 슬라이드 이면 페이지 버튼 1 : [0]첫번째 슬라이드 이미지
-               //두번째 슬라이드 이면 페이지 버튼 2 : [2]세번쨰 슬라이드 이미지
-
-               //세번째 슬라이드 이면 페이지 버튼 1 : [0]첫번째 슬라이드 이미지
-               //세번째 슬라이드 이면 페이지 버튼 2 : [1]두번째 슬라이드 이미지         
+              
 
                function pageBtnFn(){
 
@@ -359,28 +341,6 @@
                             $pageBtn.eq(i).css({backgroundImage:'url(./img/slide0'+a[i]+'.jpg)'}); 
                         }
                }
-
-               /* 배열을 안쓴경우
-               function pageBtnFn(){
-
-                    switch(cnt){
-                        case 0:
-                            //case 0 1번째 슬라이드인 경우
-                             $pageBtn.eq(0).css({backgroundImage:'url(./img/slide01.jpg)'}); //제이쿼리에서는 .하나만 쓰기!
-                             $pageBtn.eq(1).css({backgroundImage:'url(./img/slide02.jpg)'});
-                             break;
-                        case 1:
-                            //case 1 2번째 슬라이드인 경우
-                             $pageBtn.eq(0).css({backgroundImage:'url(./img/slide00.jpg)'}); //제이쿼리에서는 .하나만 쓰기!
-                             $pageBtn.eq(1).css({backgroundImage:'url(./img/slide02.jpg)'});
-                             break;
-                        case 2:
-                            //case 2 3번째 슬라이드인 경우
-                             $pageBtn.eq(0).css({backgroundImage:'url(./img/slide00.jpg)'}); //제이쿼리에서는 .하나만 쓰기!
-                             $pageBtn.eq(1).css({backgroundImage:'url(./img/slide01.jpg)'});
-                    }
-                                      
-               } */
 
                ////////5.페이지버튼(인디게이터 버튼) 클릭 이벤트///////////////
                $pageBtn.each(function(idx){
@@ -412,10 +372,7 @@
 
         },
         section4Fn:function(){
-            //슬라이드 container박스 너비에 따른 슬라이드 3개의 너비 구하기
-            //1570-40(마진값20*2)=1530
-            //슬라이드1개너비 = 1570/3 = 523.3333 = view박스의 너비
-            //반응형으로 슬라이드 컨테이너('.slide-container') 박스 너비 변화에 따른 슬라이드 너비 계산
+            
             var slideNum     = 3; //980초과:3, 980이하 :2, 600이하 1, 한화면에 보여지는 슬라이드 갯수
             var slideW     = $('#section4 .slide-container').width()/slideNum;
             var $slide     = $('#section4 .slide');
@@ -531,7 +488,6 @@
             
         }
     };
-
     jason.init();
 
 
