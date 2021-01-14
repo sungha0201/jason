@@ -11,7 +11,6 @@
             that.section3Fn();
             that.section4Fn();
             that.section5Fn();
-
         },
         headerFn:function(){
             var that = null;
@@ -19,7 +18,6 @@
             var $header = $('#header');
             var $scroll = false;
             var t = false; //toggle변수 0
-
                 $header.on({                    
                     mouseenter:function(){
                         that = $(this);
@@ -32,7 +30,6 @@
                         }
                     }
                 });
-
                 $window.scroll(function(){
                     that = $(this);
                     if( that.scrollTop() >= 30 ){
