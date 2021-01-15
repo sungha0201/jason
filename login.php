@@ -54,13 +54,18 @@
                                                 <li>
                                                     <div>
                                                         <input type="checkbox" name="idSave" id="idSave" value="">
-                                                        <label for="idSave">아이디 저장</label>
+                                                        <label for="idSave" class='idSave-label'>아이디 저장</label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="clearfix">
+                                                        <span class='left-wrap'>아직 회원이 아니신가요?<a href="#" class="memberGaipBtn">회원가입</a></span>
+                                                        <span class='right-wrap'><a href="#" class="FindeBtn">아이디/비밀번호 찾기</a></span>
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div>
-                                                        <span class='left-wrap'>아직 회원이 아니신가요?<a href="#" class="memberGaipBtn">회원가입</a></span>
-                                                        <span class='right-wrap'><a href="#" class="FindeBtn">아이디/비밀번호 찾기</a></span>
+                                                        <input type="submit" class="submitBtn" value="로그인">
                                                     </div>
                                                 </li>
                                             </ul>

@@ -26,6 +26,7 @@
             var $nav = $('#nav');
             var $mainBtn = $('#nav .main-btn');
             var $sub = $('#nav .sub');
+            var $section2 = $('.#section2'); //전체 섹션 공용사용
 
                 $header.on({                    
                     mouseenter:function(){
@@ -49,7 +50,7 @@
                         if(t===false){
                             t=true;
                             var headerH = $('#header').height();
-                            $('html,body').stop().animate({scrollTop:$('#main #section2').offset().top-headerH },600,'easeOutExpo');
+                            $('html,body').stop().animate({scrollTop:$section2.offset().top-headerH },600,'easeOutExpo');
                         }
                         
                     }
@@ -146,8 +147,10 @@
             var setId2 = null;
             var s = 4; //4초 간격
             var tcnt = 0; 
+            var $section1 = $('#section1');
+            var $section2 = $('#main #section1');
 
-            //setTimeout(autoTimerFn,10);
+            setTimeout(autoTimerFn,10);
 
             function mainSlideFn(){               
                 $slideWrap.stop().animate({left:-(100*cnt)+'%'},600, function(){
@@ -207,8 +210,8 @@
                 winW = $(window).width();
                 winH = $(window).height();
 
-                $('#main #section1, #login #section1').css({height:winH});
-                $('#main #section2').css({marginTop:winH}); //margin top값(섹션1떄문에 밀려남)을 창높이로 설정
+                $section1.css({height:winH});
+                $section2.css({marginTop:winH}); //margin top값(섹션1떄문에 밀려남)을 창높이로 설정
                 $slide.css({width:winW});                
                 
             }
