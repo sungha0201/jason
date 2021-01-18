@@ -71,14 +71,14 @@
                 <div class="container">
                     <ul class="clearfix">
                         <li> <!-- 가운데 -->
-                            <a href="#" class="logo-btn">
+                            <a href="./index.php" class="logo-btn">
                                 <img src="./img/logo_color.png" class="color" alt="">
                                 <img src="./img/logo_white.png" class="white"  alt="">
                             </a>
                         </li>
 
                         <li> <!-- 왼쪽 -->
-                            <a href="#" class="menu-bar" href="#">
+                            <a href="#" class="menu-bar">
                                 <span class="line-box">
                                     <i class="line line1"></i>
                                     <i class="line line2"></i>
@@ -92,10 +92,10 @@
 
                         <li> <!-- 오른쪽 -->
                             <ul>
-                                <li><span><a href="#"  class="login-btn">LOGIN</a></span></li>
+                                <li><span><a href="./login.php"  class="login-btn">LOGIN</a></span></li>
                                 <li><span><i></i></span></li>
-                                <li><span><a href="#"  class="join-btn">JOIN</a></span></li>
-                                <li><span><a href="#" class="confirm-btn"><span>견적<br>문의</span></a></span></li>
+                                <li><span><a href="./join.php"  class="join-btn">JOIN</a></span></li>
+                                <li><span><a href="./confirm.php" class="confirm-btn"><span>견적<br>문의</span></a></span></li>
                                 <li><span><a href="#" class="search-btn"><img src="./img/search_i.png" class="black_" alt=""><img src="./img/search_i_01.png" class="white_" alt=""></a></span></li>
                             </ul>
                         </li>
@@ -110,52 +110,52 @@
                 <div class="container">
                     <ul>
                         <li>
-                            <a href="#" class="main-btn">여행테마</a>
+                            <a href="./main1_1.php" class="main-btn">여행테마</a>
                             <div class="sub sub1">
                                 <div class="sub-wrap">
                                     <div class="sub-gap">
                                         <ul>
-                                            <li><a href="#" class="subBtn">베트남 / 발리 / 태국</a></li>
-                                            <li><a href="#" class="subBtn">몰디브 및 특수지역</a></li>
-                                            <li><a href="#" class="subBtn">유럽</a></li>
-                                            <li><a href="#" class="subBtn">그 외 지역</a></li>
-                                            <li><a href="#" class="subBtn">아만 리조트</a></li>
-                                            <li><a href="#" class="subBtn">럭셔리</a></li>
-                                            <li><a href="#" class="subBtn">가족</a></li>
-                                            <li><a href="#" class="subBtn">허니문</a></li>
-                                            <li><a href="#" class="subBtn">태교여행</a></li>
+                                            <li><a href="./main1_1.php" class="subBtn">베트남 / 발리 / 태국</a></li>
+                                            <li><a href="./main1_2.php" class="subBtn">몰디브 및 특수지역</a></li>
+                                            <li><a href="./main1_3.php" class="subBtn">유럽</a></li>
+                                            <li><a href="./main1_4.php" class="subBtn">그 외 지역</a></li>
+                                            <li><a href="./main1_5.php" class="subBtn">아만 리조트</a></li>
+                                            <li><a href="./main1_6.php" class="subBtn">럭셔리</a></li>
+                                            <li><a href="./main1_7.php" class="subBtn">가족</a></li>
+                                            <li><a href="./main1_8.php" class="subBtn">허니문</a></li>
+                                            <li><a href="./main1_9.php" class="subBtn">태교여행</a></li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                         </li>
-                        <li><a href="#" class="main-btn">프로모션</a></li>
-                        <li><a href="#" class="main-btn">JTS소식</a></li>
-                        <li><a href="#" class="main-btn">여행후기</a></li>
+                        <li><a href="/main2.php" class="main-btn">프로모션</a></li>
+                        <li><a href="./main3.php" class="main-btn">JTS소식</a></li>
+                        <li><a href="./main4.php" class="main-btn">여행후기</a></li>
                         <li>
-                            <a href="#" class="main-btn">여행문의</a>
+                            <a href="./main5_1.php" class="main-btn">여행문의</a>
                             <div class="sub sub2">
                                 <div class="sub-wrap">
                                     <div class="sub-gap">
                                         <ul>
-                                            <li><a href="#" class="subBtn">일반여행문의</a></li>
-                                            <li><a href="#" class="subBtn">단체여행문의</a></li>
-                                            <li><a href="#" class="subBtn">리조트견적요청</a></li>                                            
+                                            <li><a href="./main5_1.php" class="subBtn">일반여행문의</a></li>
+                                            <li><a href="./main5_2.php" class="subBtn">단체여행문의</a></li>
+                                            <li><a href="./main5_3.php" class="subBtn">리조트견적요청</a></li>                                            
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                         </li>
                         <li>
-                            <a href="#" class="main-btn">회사소개</a>
+                            <a href="./main6_1.php" class="./main6.php">회사소개</a>
                             <div class="sub sub3">
                                 <div class="sub-wrap">
                                     <div class="sub-gap">
                                         <ul>
-                                            <li><a href="#" class="subBtn">About Us</a></li>
-                                            <li><a href="#" class="subBtn">회사연혁</a></li>
-                                            <li><a href="#" class="subBtn">오시는길</a></li>                                            
-                                            <li><a href="#" class="subBtn">공지사항</a></li>                                            
+                                            <li><a href="./main6_1.php" class="subBtn">About Us</a></li>
+                                            <li><a href="./main6_2.php" class="subBtn">회사연혁</a></li>
+                                            <li><a href="./main6_3.php" class="subBtn">오시는길</a></li>                                            
+                                            <li><a href="./main6_4.php" class="subBtn">공지사항</a></li>                                            
                                         </ul>
                                     </div>
                                 </div>

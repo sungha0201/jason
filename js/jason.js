@@ -10,7 +10,8 @@
             that.section2Fn();
             that.section3Fn();
             that.section4Fn();
-            that.loginsection2Fn();
+            that.loginsection2Fn(); //로그인 페이지
+            that.main1_1Fn(); //메인1_1
 
         },
         headerFn:function(){
@@ -26,6 +27,7 @@
             var $nav = $('#nav');
             var $mainBtn = $('#nav .main-btn');
             var $sub = $('#nav .sub');
+            var $section2 = $('.#section2'); //전체 섹션 공용사용
 
                 $header.on({                    
                     mouseenter:function(){
@@ -49,7 +51,7 @@
                         if(t===false){
                             t=true;
                             var headerH = $('#header').height();
-                            $('html,body').stop().animate({scrollTop:$('#main #section2').offset().top-headerH },600,'easeOutExpo');
+                            $('html,body').stop().animate({scrollTop:$section2.offset().top-headerH },600,'easeOutExpo');
                         }
                         
                     }
@@ -146,8 +148,10 @@
             var setId2 = null;
             var s = 4; //4초 간격
             var tcnt = 0; 
+            var $section1 = $('#section1');
+            var $section2 = $('#main #section1');
 
-            //setTimeout(autoTimerFn,10);
+            setTimeout(autoTimerFn,10);
 
             function mainSlideFn(){               
                 $slideWrap.stop().animate({left:-(100*cnt)+'%'},600, function(){
@@ -207,8 +211,8 @@
                 winW = $(window).width();
                 winH = $(window).height();
 
-                $('#main #section1, #login #section1').css({height:winH});
-                $('#main #section2').css({marginTop:winH}); //margin top값(섹션1떄문에 밀려남)을 창높이로 설정
+                $section1.css({height:winH});
+                $section2.css({marginTop:winH}); //margin top값(섹션1떄문에 밀려남)을 창높이로 설정
                 $slide.css({width:winW});                
                 
             }
@@ -604,10 +608,45 @@
                 },1000);
             }
         },
-        //로그인페이지
-        
+        //로그인페이지      
         loginsection2Fn:function(){
             
+        },
+        
+        //메인 1_1페이지
+        main1_1Fn:function(){
+            //섹션2의 .wrap 너비에 대한 갤러리 이미지 높이설정
+            var $section2WrapW = $('#main1_1 #section2 .wrap').innerWidth(); //.wrap 너비
+            var $section2ImgWrap = $('#main1_1 #section2 .img-wrap'); //갤러리 이미지 박스 요소
+            var $win = $(window);
+            var $winW = $win.innerWidth();
+            var n = 3; //슬라이드갯수
+
+            function resizeFn(){
+                if($winW > 1280){ //1281 이상은 이미지3개
+                    n = 3;
+                }
+                else if($winW > 860){ //861 이상은 이미지2개
+                    n = 2;
+                }
+                else{
+                    n = 1;
+                }
+                $section2WrapW = $('#main1_1 #section2 .wrap').innerWidth();
+                $section2ImgWrap.css({height:($section2WrapW/n)*0.689984636}); //갤러리 이미지박스 높이
+
+                console.log(n);
+                console.log(($section2WrapW/n)*0.689984636);
+            }
+            
+            setTimeout(resizeFn,10);
+            
+            $win.resize(function(){
+
+            });
+            
+
+
         }
 
     };
