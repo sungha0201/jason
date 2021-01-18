@@ -30,9 +30,12 @@
     #login #section2 .wrap .gap .container .content > ul > li .content-gap .title h3 {color:#222;font-size:17px;}
     #login #section2 .wrap .gap .container .content > ul > li .content-gap .title h2 {color:#2e3192;font-size:35px;}
 
+<<<<<<< HEAD
     #main1_1 #section2 .wrap .gap .container .content .gallery-wrap li {width:50%;}
     /* #main1_1 #section2 .wrap .gap .container .content .gallery-wrap li .gallery-gap .img-wrap {height:381.5901672px;} */
 
+=======
+>>>>>>> e7f9c0c1803bbce5a5e43782b4980fadbc702aa3
 }
 @media all and (max-width:1024px){
 

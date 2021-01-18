@@ -9,6 +9,7 @@
                 <div class="container">
                     <div class="title">
                         <h2>베트남 / 발리 / 태국</h2>
+<<<<<<< HEAD
                     </div>                   
                 </div>
             </div>
@@ -398,6 +399,9 @@
             <div class="gap">
                 <div class="container">
                                     
+=======
+                    </div>
+>>>>>>> e7f9c0c1803bbce5a5e43782b4980fadbc702aa3
                 </div>
             </div>
         </div>
